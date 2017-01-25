@@ -42,7 +42,7 @@ Once you have completed the above for all three URLs,
     If you want to, you can also create another stylesheet for additional styles and link to that, too.
 
     Make things look nicer.
- 1. Coincidentally, [Font Awesome](http://fontawesome.io/icons/) has icons for rock, paper, and scissors. Find them and use them.
+ 1. Coincidentally, [Font Awesome](http://fontawesome.io/icons/) has icons for rock, paper, and scissors. Find them and use them. The easiest way to include Font Awesome in your project is to link to [BootstrapCDN](https://www.bootstrapcdn.com/fontawesome/). (If you want to, feel free to use a [Bootswatch](https://www.bootstrapcdn.com/bootswatch/) from there, too.)
  1. Add a root URL such that visiting the bare domain, [http://localhost:3000](http://localhost:3000), leads to a landing page with some information about the game. (Hint: the first argument of the route will just be the plain slash, like so:
 
         get("/", { # etc ...
