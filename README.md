@@ -26,7 +26,7 @@ This is currently a brand new Rails app, with absolutely no routes, controllers,
 
 Add support for [each](http://localhost:3000/rock) [of](http://localhost:3000/paper) [our](http://localhost:3000/scissors) three URLs one at a time. For each one,
 
- 1. Connect the [RCAV dots](https://gist.github.com/raghubetina/c200d88adcfe0d4dcd04) and display "Hi!" to prove that you did so. Make up whatever names you want for the controller and action.
+ 1. Connect the [RCAV dots](https://guides.firstdraft.com/rcav-flowchart.html) and display "Hi!" to prove that you did so. Make up whatever names you want for the controller and action.
  1. Now step back into the action and write some logic to determine whether the player won or lost. Put the computer move and the outcome into instance variables.
  1. In the view template, display the instance variables. Format it a little with some markup and some copy.
 
@@ -35,6 +35,12 @@ Add support for [each](http://localhost:3000/rock) [of](http://localhost:3000/pa
 Once you have completed the above for all three URLs,
 
  1. On each page, add links to get to the other two pages (so that our users don't have to keep typing into the address bar).
- 1. I dropped three images in the `public/assets/images` folder: `rock.png`, `paper.png`, and `scissors.png`. Therefore, they are available to use (e.g., as the `src=""` of `<img>`s) at [http://localhost:3000/assets/images/rock.png](http://localhost:3000/assets/images/rock.png), etc. Use the images on your pages as you see fit.
- 1. I also dropped `bootstrap.css` in the `public/assets/css` folder. In Rails, the `<head>` of our documents lives in `app/views/layouts/application.html.erb`. Add a `<link>` to `/assets/css/bootstrap.css` here, and use Bootstrap styles to make everything look nicer.
- 1. Add a root URL such that visiting the bare domain, [http://localhost:3000](http://localhost:3000), defaults to playing rock.
+ 1. I dropped `bootstrap.css` in the `public/assets/css` folder. That means that it is accessible at [http://localhost:3000/assets/css/bootstrap.css](http://localhost:3000/assets/css/bootstrap.css) (without the `public/`). That means that we can link to it in the head of our document:
+
+        <link rel="stylesheet" href="/assets/css/bootstrap.css">
+
+    If you want to, you can also create another stylesheet for additional styles and link to that, too.
+
+    Make things look nicer.
+ 1. Coincidentally, [Font Awesome](http://fontawesome.io/icons/) has icons for rock, paper, and scissors. Find them and use them.
+ 1. Add a root URL such that visiting the bare domain, [http://localhost:3000](http://localhost:3000), leads to a landing page with some information about the game. (Hint: the first argument of the route will just be the plain slash, like so: `get("/", { # etc ...`.)
