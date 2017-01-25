@@ -39,7 +39,7 @@ Once you have completed the above for all three URLs,
 
         <link rel="stylesheet" href="/assets/css/bootstrap.css">
 
-    If you want to, you can also create another stylesheet for additional styles in the `public/` folder and link to that, too.
+    If you want to, you can also create another stylesheet for additional styles in the `public/` folder and link to that, too (for example, if you want to add our standard vertical spacers).
 
     You can also add any images that you like to the `public/` folder, and use them in the same way as the `src` for `<img>`s. However, coincidentally...
 
