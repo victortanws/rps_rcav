@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '5.0.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -36,7 +36,7 @@ group :development do
 end
 
 
-gem 'rspec-rails', group: [:test, :development]
-gem 'capybara', group: [:test, :development]
-gem 'quiet_assets', group: [:test, :development]
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "rspec-rails", group: [:test, :development]
+gem "capybara", group: [:test, :development]
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "wdm" if Gem.win_platform?
